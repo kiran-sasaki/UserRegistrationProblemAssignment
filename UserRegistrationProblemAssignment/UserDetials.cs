@@ -18,7 +18,7 @@ namespace UserRegistrationProblemAssignment
         //Regular Expression For PhoneNumber Validation
         public static string REGEX_PHONENUMBER = "^[9]{1}[1]{1}\\s[0-9]{10}$";
         //Regular Expression For PassWord Validation
-        public static string REGEX_PASSWORD = "^[A-Z]{1}[a-z0-9]{7,}$";
+        public static string REGEX_PASSWORD = "(?=.*?[A-Z])(?=.*?[a-z])(?=.*[0-9]).{8,}$";
         public bool ValidateFirstname(string firstname)
         {
             return Regex.IsMatch(firstname, REGEX_FIRSTNAME);
