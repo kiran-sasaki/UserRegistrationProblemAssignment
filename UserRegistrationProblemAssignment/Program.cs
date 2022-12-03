@@ -24,13 +24,21 @@
                 Console.WriteLine("LastName not matched");
             //UC3
             Console.WriteLine("please enter The EmailAdress: ");
-            string Emailaddress = Console.ReadLine();
+            string emailaddress = Console.ReadLine();
 
-            bool Email = user.validateEmailAddress(Emailaddress);
+            bool Email = user.validateEmailAddress(emailaddress);
             if (Email)
                 Console.WriteLine("Email Matched");
             else
                 Console.WriteLine("Email not matched");
+            //UC4
+            Console.WriteLine("please enter PhoneNumber");
+            string phonenumber = Console.ReadLine();
+            bool PhnNO = user.validatephonenumber(phonenumber);
+            if (PhnNO)
+                Console.WriteLine("Phn Number Matched");
+            else
+                Console.WriteLine("Phn Number not matched");
         }
     }
 }
